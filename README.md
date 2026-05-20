@@ -29,10 +29,14 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Custom domain (optional)
+## Custom domain (yariv.barsheshat.com)
 
-You already own `barsheshat.com`. To use it:
-
-1. Add a file named `CNAME` to the repo root containing the single line `barsheshat.com`.
-2. At your DNS registrar, point the apex to GitHub Pages by creating four `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, and a `CNAME` record from `www` to `yarv.github.io`.
-3. In **Settings → Pages**, fill in the Custom domain field. GitHub will provision an HTTPS certificate automatically.
+1. Add a file named `CNAME` to the repo root containing the single line:
+   ```
+   yariv.barsheshat.com
+   ```
+2. At your DNS provider for `barsheshat.com`, add one record:
+   - Type: `CNAME`
+   - Name/host: `yariv`
+   - Value/target: `yarv.github.io.` (the trailing dot only matters if your DNS UI is strict about FQDNs)
+3. In the repo's **Settings → Pages**, set the Custom domain field to `yariv.barsheshat.com` and tick **Enforce HTTPS** once GitHub finishes provisioning the certificate (usually under a minute after the DNS resolves).
