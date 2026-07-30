@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side projects &middot; Yariv Barsheshat</title>
+  <meta name="description" content="Side projects by Yariv Barsheshat: wikiraceai, a daily race against an LLM agent through Wikipedia, and Saga Generator, collaborative AI-written branching stories.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav class="site-nav">
+      <a href="index.html" class="site-name">Yariv Barsheshat</a>
+      <div class="site-nav-links">
+        <a href="index.html">about</a>
+        <a href="projects.html" aria-current="page">side projects</a>
+        <a href="yariv-barsheshat-cv.pdf">cv</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <h1>Side projects</h1>
+      <p class="page-intro">Things I build outside of research, mostly to see what LLMs can do when you point them somewhere fun.</p>
+    </header>
+
+    <article class="project-card" id="wikiraceai">
+      <a class="project-shot" href="https://wikiraceai.com" aria-label="Visit wikiraceai.com">
+        <img src="assets/wikiraceai.png" alt="wikiraceai landing page: Race the AI through Wikipedia, with today's challenge from Desalination to Fertilizer" loading="lazy">
+      </a>
+      <div class="project-body">
+        <h2 class="project-title"><a href="https://wikiraceai.com">wikiraceai</a></h2>
+        <p class="project-credit">Designed and built solo.</p>
+        <p>A daily Wikipedia race against an LLM agent. Everyone gets the same start and goal article, and you click through Wikipedia trying to reach the goal in fewer hops than the AI. The agent plays by your rules: no search, no goal preview, just the links on the page it is reading. Every move it makes is streamed and inspectable, and its run is cached so the whole world races the same agent each day.</p>
+        <ul class="project-tags">
+          <li>LLM agents</li>
+          <li>Python</li>
+          <li>AISI Inspect</li>
+          <li>real-time streaming</li>
+        </ul>
+        <p class="project-links">
+          <a href="https://wikiraceai.com">wikiraceai.com</a>
+          <a href="https://github.com/yarv/wikigame-agent">agent engine on GitHub</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="project-card" id="sagagenerator">
+      <a class="project-shot" href="https://sagagenerator.com" aria-label="Visit sagagenerator.com">
+        <img src="assets/sagagenerator.png" alt="Saga Generator landing page: forge your own adventure or follow your friends" loading="lazy">
+      </a>
+      <div class="project-body">
+        <h2 class="project-title"><a href="https://sagagenerator.com">Saga Generator</a></h2>
+        <p class="project-credit">Co-developed end-to-end with my friend and colleague Rob.</p>
+        <p>Collaborative branching stories written with AI. Forge your own adventure or follow your friends: daily sagas, public and private stories, and live multiplayer sessions where readers vote on where the story goes next. An LLM writes each branch as the story unfolds, so no two sagas end up the same.</p>
+        <ul class="project-tags">
+          <li>AI storytelling</li>
+          <li>live multiplayer</li>
+          <li>branching narratives</li>
+        </ul>
+        <p class="project-links">
+          <a href="https://sagagenerator.com">sagagenerator.com</a>
+        </p>
+      </div>
+    </article>
+
+    <footer>
+      <p>Last updated July 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
