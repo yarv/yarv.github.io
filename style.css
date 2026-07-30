@@ -224,26 +224,21 @@ h2 {
 /* Side-projects teaser (home) */
 
 .project-teaser {
-  list-style: none;
-  display: grid;
-  gap: 0.9rem;
+  row-gap: 0.9rem;
 }
 
-.project-teaser a {
+.project-teaser dt {
+  font-size: 0.98rem;
+  padding-top: 0;
+}
+
+.project-teaser dt a {
   font-weight: 700;
-}
-
-.teaser-desc {
-  color: var(--muted);
-}
-
-.teaser-desc::before {
-  content: " \00b7  ";
-  color: var(--muted);
 }
 
 .teaser-more {
   margin-top: 1.1rem;
+  margin-left: 11.5rem;
   font-size: 0.92rem;
 }
 
@@ -402,6 +397,12 @@ footer {
   }
   .timeline dt:first-child {
     margin-top: 0;
+  }
+  .project-teaser dt {
+    margin-top: 0.9rem;
+  }
+  .teaser-more {
+    margin-left: 0;
   }
   .project-body {
     padding: 1.1rem 1.15rem 1.25rem;
